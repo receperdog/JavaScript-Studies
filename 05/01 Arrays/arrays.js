@@ -23,8 +23,8 @@ fruits.forEach(function (fruitName, indexOfFruit, fruits) {
 });
 
 //Remove an item by index position
-console.log('Removed');
-fruits.splice(1,2);//Banana removed
+console.log("Removed");
+fruits.splice(1, 2); //Banana removed
 fruits.forEach(function (fruitName, indexOfFruit, fruits) {
   console.log(fruitName, indexOfFruit);
 });
@@ -32,5 +32,10 @@ fruits.forEach(function (fruitName, indexOfFruit, fruits) {
 //Copy an Array
 let newArray = [...fruits];
 newArray.forEach(function (fruitName, indexOfFruit, newArray) {
-    console.log(fruitName, indexOfFruit);
-  });
+  console.log(fruitName, indexOfFruit);
+});
+
+//finding index number of some element
+newArray.push("Ali", "Ata", "Bak");
+let indexNumber = newArray.indexOf("Ata");
+console.log(`Index number of Ata: ${indexNumber} ==> ${newArray[indexNumber]}`); // 2 Ata
