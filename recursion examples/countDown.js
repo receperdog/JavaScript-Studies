@@ -1,6 +1,6 @@
 let countDown = (number) => {
   if (number === 0) {
-    return;
+    return 0;
   } else {
     console.log(number);
     return countDown(--number);
